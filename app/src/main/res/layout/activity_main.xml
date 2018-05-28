@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.mj.yj_demo.MainActivity">
+
+    <TextView
+        android:id="@+id/hotname"
+        android:gravity="center"
+        android:text="热点名称:"
+        android:textColor="#000"
+        android:textSize="16sp"
+        app:layout_heightPercent="10%"
+        app:layout_widthPercent="25%" />
+
+    <TextView
+        android:id="@+id/hotpassword"
+        android:layout_below="@+id/hotname"
+        android:gravity="center"
+        android:text="热点密码:"
+        android:textColor="#000"
+        android:textSize="16sp"
+        app:layout_heightPercent="10%"
+        app:layout_widthPercent="25%" />
+
+    <EditText
+
+        android:id="@+id/edit_name"
+        android:layout_toRightOf="@+id/hotname"
+        android:background="@null"
+        android:ellipsize="end"
+        android:hint="请输入热点名称"
+        android:maxLength="30"
+        android:paddingLeft="10dp"
+        android:singleLine="true"
+        android:textSize="13sp"
+        app:layout_heightPercent="10%"
+        app:layout_widthPercent="75%" />
+
+    <EditText
+
+        android:id="@+id/edit_password"
+        android:layout_below="@+id/edit_name"
+        android:layout_toRightOf="@+id/hotpassword"
+        android:background="@null"
+        android:ellipsize="end"
+        android:hint="请输入热点密码(最低8位)"
+        android:maxLength="30"
+        android:paddingLeft="10dp"
+        android:singleLine="true"
+        android:textSize="13sp"
+        app:layout_heightPercent="10%"
+        app:layout_widthPercent="75%" />
+
+    <Button
+        android:text="确认"
+        android:id="@+id/con_confim"
+        android:layout_below="@+id/edit_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        app:layout_heightPercent="10%"
+        app:layout_widthPercent="70%" />
+
+</android.support.percent.PercentRelativeLayout>
